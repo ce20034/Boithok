@@ -79,4 +79,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        // Minimize the app instead of navigating back
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
 }

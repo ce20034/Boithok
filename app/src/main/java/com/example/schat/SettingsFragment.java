@@ -36,7 +36,7 @@ public class SettingsFragment extends Fragment {
     FirebaseDatabase fDb;
     FirebaseStorage storage;
     ImageView userImg;
-    TextView userName,userAbout;
+    TextView userName,logout,privacy,help;
     Button update;
     ToolDotProgress progress;
 
@@ -47,9 +47,12 @@ public class SettingsFragment extends Fragment {
 
         userImg=view.findViewById(R.id.userImg);
         userName=view.findViewById(R.id.userName);
-        userAbout=view.findViewById(R.id.userAbout);
+
         update=view.findViewById(R.id.updateProf);
         progress=view.findViewById(R.id.dots_progress);
+        logout = view.findViewById(R.id.logout1);
+        privacy = view.findViewById(R.id.privacy1);
+        help = view.findViewById(R.id.help1);
 
         progress.setVisibility(View.VISIBLE);
 
@@ -68,7 +71,7 @@ public class SettingsFragment extends Fragment {
                     Picasso.get()
                             .load(user.getProfilePic()).into(userImg);
                 }
-                userAbout.setText(user.getUserAbout());
+
             }
 
             @Override
@@ -83,13 +86,29 @@ public class SettingsFragment extends Fragment {
             startActivityForResult(intent,25);
         });
 
+        logout.setOnClickListener(view1 -> {
+            // Sign out the user from Firebase Authentication
+            FirebaseAuth.getInstance().signOut();
+            // Redirect to the login screen (optional)
+            Intent intent =new Intent(requireContext(),LoginActivity.class);
+            startActivity(intent);
+        });
+
+        privacy.setOnClickListener(view1 -> {
+            Intent intent =new Intent(requireContext(),privacy.class);
+            startActivity(intent);
+        });
+
+        help.setOnClickListener(view1 -> {
+            Intent intent =new Intent(requireContext(),help.class);
+            startActivity(intent);
+        });
+
         update.setOnClickListener(view1 -> {
             String name=userName.getText().toString();
-            String about=userAbout.getText().toString();
 
             HashMap<String,Object> map=new HashMap<>();
             map.put("userName",name);
-            map.put("userAbout",about);
             if(name.isEmpty()){
                 Toast.makeText(getContext(), "UserName Required!", Toast.LENGTH_SHORT).show();
             }else{

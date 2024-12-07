@@ -8,146 +8,61 @@
     android:orientation="vertical">
 
   <RelativeLayout
+
       android:layout_width="match_parent"
       android:layout_height="0dp"
        android:layout_weight=".65"
-      android:background="@drawable/wbg"
+      android:background="@drawable/picc"
       android:padding="20dp">
 
-    <RelativeLayout
-        android:id="@+id/p1"
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:padding="10dp"
-        android:clipChildren="false"
-        android:layout_marginRight="10dp">
-      <TextView
-          android:id="@+id/imgBg1"
-          android:layout_width="100dp"
-          android:layout_height="120dp"
-          android:background="@drawable/p1_bg"
-          android:layout_marginTop="25dp"/>
-      <ImageView
-          android:id="@+id/img1"
-          android:layout_width="130dp"
-          android:layout_height="170dp"
-          android:src="@drawable/person1"
-          android:layout_marginTop="-30dp"
-          android:layout_marginLeft="-30dp"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/p2"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        android:padding="10dp"
-        android:clipChildren="false">
-      <TextView
-          android:id="@+id/imgBg2"
-          android:layout_width="120dp"
-          android:layout_height="130dp"
-          android:background="@drawable/p2_bg"
-          android:layout_marginTop="25dp"/>
-       <ImageView
-         android:id="@+id/img2"
-         android:layout_width="130dp"
-         android:layout_height="180dp"
-         android:src="@drawable/person1"
-         android:layout_marginTop="-30dp"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/p3"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/p1"
-        android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        android:padding="10dp"
-        android:clipChildren="false"
-        android:layout_marginRight="10dp">
-      <TextView
-          android:id="@+id/imgBg3"
-          android:layout_width="120dp"
-          android:layout_height="130dp"
-          android:background="@drawable/p2_bg"
-          android:layout_marginTop="25dp"/>
-      <ImageView
-          android:id="@+id/img3"
-          android:layout_width="130dp"
-          android:layout_height="180dp"
-          android:src="@drawable/person1"
-          android:layout_marginTop="-30dp"/>
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/p4"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/p2"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:padding="10dp"
-        android:clipChildren="false">
-      <TextView
-          android:id="@+id/imgBg4"
-          android:layout_width="100dp"
-          android:layout_height="120dp"
-          android:background="@drawable/p4_bg"
-          android:layout_marginTop="25dp"/>
-      <ImageView
-          android:id="@+id/img4"
-          android:layout_width="130dp"
-          android:layout_height="170dp"
-          android:src="@drawable/person1"
-          android:layout_marginTop="-30sp"
-          android:layout_marginRight="-30sp"/>
-    </RelativeLayout>
 
   </RelativeLayout>
+
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="0dp"
       android:layout_weight=".35"
       android:background="@color/white"
       android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enjoy the new experience of \n
-         chating with global friends"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/bg"
         android:layout_marginTop="20dp"
-        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"/>
+        android:text="@string/enjoy_the_new_experience_of_n_chating_with_global_friends"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="@color/bg"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connect pple arround the world for free"
+        android:layout_marginTop="10dp"
+        android:text="Connect people around the world for free"
         android:textAlignment="center"
-        android:textColor="@color/bg_1"
-        android:layout_marginTop="10dp"/>
+        android:textColor="@color/bg_1" />
+
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Get Started"
         android:layout_marginVertical="20dp"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
         android:background="@drawable/bg_green"
-        android:paddingHorizontal="30dp"/>
+        android:paddingHorizontal="30dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Designed by Sharkz Reigns"
         android:textAlignment="center"
         android:textColor="@color/bg_1"
-        android:visibility="gone"/>
+        android:visibility="gone" />
   </LinearLayout>
 
 </LinearLayout>

@@ -27,7 +27,7 @@
             android:id="@+id/userImg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/person"/>
+            android:src="@drawable/first"/>
     </androidx.cardview.widget.CardView>
 
        <com.example.schat.ToolDotProgress
@@ -57,22 +57,10 @@
         android:gravity="center"
         android:background="@drawable/edit_text_bg"
         android:layout_marginVertical="5dp"/>
-    <EditText
-        android:id="@+id/userAbout"
-        android:layout_below="@id/userName"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:textColor="@color/bg_white"
-        android:hint="About"
-        android:textColorHint="#7F7193"
-        android:minWidth="200dp"
-        android:gravity="center"
-        android:background="@drawable/edit_text_bg"
-        android:layout_marginVertical="5dp"/>
+
        <Button
            android:id="@+id/updateProf"
-           android:layout_below="@id/userAbout"
+           android:layout_marginTop="200dp"
            android:layout_centerHorizontal="true"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
@@ -91,22 +79,17 @@
         android:orientation="vertical"
         android:layout_marginHorizontal="10dp">
         <TextView
+            android:id="@+id/logout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Account"
+            android:text="Logout"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="15dp"
             android:textColor="@color/bg"/>
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="15dp"
-            android:textColor="@color/bg"/>
-        <TextView
+            android:id="@+id/privacy1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Privacy"
@@ -115,6 +98,7 @@
             android:layout_marginBottom="15dp"
             android:textColor="@color/bg"/>
         <TextView
+            android:id="@+id/help1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Help"

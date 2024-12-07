@@ -72,4 +72,11 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        // Minimize the app instead of navigating back
+        super.onBackPressed();
+        moveTaskToBack(true);
+    }
 }

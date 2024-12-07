@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "810439795164",
-    "project_id": "schat-4cb05",
-    "storage_bucket": "schat-4cb05.appspot.com"
+    "project_number": "605117339190",
+    "project_id": "schat-41ea6",
+    "storage_bucket": "schat-41ea6.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:810439795164:android:80c7751f6b8dd837e4af19",
+        "mobilesdk_app_id": "1:605117339190:android:b4a3b99e94f196f2fe2a97",
         "android_client_info": {
           "package_name": "com.example.schat"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "810439795164-ftbg48iv6rs196aou06ahlpbjlsjbkf8.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCT8vQZ0nB2mRl5z2L85t9qibeoWq4C-Fg"
+          "current_key": "AIzaSyBW5XYPwJxirtSCOpXwq3_41pcJIdqHQzI"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "810439795164-ftbg48iv6rs196aou06ahlpbjlsjbkf8.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
